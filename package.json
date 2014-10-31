@@ -1,0 +1,21 @@
+{
+  "name": "firecracker-mailer",
+  "version": "0.0.0",
+  "description": "Render and send emails.",
+  "private": true,
+  "main": "lib/mailer.js",
+  "scripts": {
+    "start": "node lib/mailer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pivit Labs",
+  "license": "All Rights Reserved",
+  "dependencies": {
+    "async": "~0.9.0",
+    "nodemailer": "~1.0.4",
+    "swig": "~1.4.2",
+    "swig-email-templates": "~1.3.0"
+  },
+  "devDependencies": {
+  }
+}
