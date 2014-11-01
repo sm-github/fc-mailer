@@ -40,12 +40,12 @@ describe('Mailer', function () {
 
 			m._renderMessage(templateName, data, function (err, html, text) {
 
-				console.log('err' + err + '\nhtml\n' + html + '\ntext\n' + text);
-				
+				// console.log('\nhtml\n' + html + '\ntext\n' + text);
+				assert(!err, 'error rendering message' + err);
 				assert(html == '<html><body><h1>This is the test text!</h1> ' + data.words + '\n</body></html>', 'html looks wrong');
 				assert(text == 'This is the test text! ' + data.words, 'text looks wrong');
 
-				done(err);
+				done();
 			});
 		});
 
