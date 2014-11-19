@@ -6,7 +6,7 @@ The Firecracker Mailer handles rendering and sending emails.
 Example
 =======
 
-```
+``` js
 var Mailer = require('firecracker-mailer');
 
 var adminMailer = new Mailer({
