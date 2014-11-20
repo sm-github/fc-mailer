@@ -24,10 +24,10 @@ describe('Mailer', function () {
 			service: "Mandrill",
 			fromName: "testName",
 			fromAddress: "fromAddress@email.test",
-			templateDir: "../test",
+			templateDir: __dirname,
 			transport: testTransport
 
-		}
+		};
 
 		var m = new mailer(config);
 
